@@ -1,38 +1,20 @@
-# TCF Québec Oral Lab
+# TCF Québec Oral Lab V3
 
-A lightweight static GitHub Pages study app for TCF Québec oral practice.
+一个面向 TCF Québec / TCF Canada Expression Orale 的静态学习网站。
 
-## Features
-- Tâche 2 / Tâche 3 question bank
-- Topic categorization and frequency tags
-- Three-color learning system:
-  - Purple = question / question type / framework
-  - Green = reusable answer / universal phrases
-  - Orange = learner self-fill / personal version
-- Random practice
-- Timed practice
-- Mock exam
-- 14 core reusable phrases
-- LocalStorage for completed items, notes, mistakes, and personal phrase examples
+## V3 学习逻辑
+- 🟣 题型 / 母题：先判断题目属于哪一类。
+- 🟢 通用句：完整、可以直接背诵的句子；前 8 句优先。
+- 🔵 半通用句：根据具体主题稍微替换关键词即可使用。
+- 🟢 完整范文：每一道题都有参考范文，不要求用户自己填写。
+- 📐 回答框架：Tâche 2 互动提问 + Tâche 3 4分30秒观点表达。
+- 🔥 高频：根据公开题库的重复记录标记。
 
-## Deploy to GitHub Pages
-1. Create a new GitHub repository.
-2. Upload `index.html`, `style.css`, `data.js`, `app.js`, and `README.md`.
-3. Open **Settings → Pages**.
-4. Choose **Deploy from a branch**, select `main` and `/root`.
-5. Save. GitHub will provide the Pages URL.
+## 部署 GitHub Pages
+1. 将整个文件夹上传到 GitHub repository。
+2. Settings → Pages。
+3. Source 选择 Deploy from a branch。
+4. Branch 选择 main / root。
 
-## Important source note
-The current sample questions are based on publicly available 2026 TCF oral topic archives and are labeled with their source month. These public archives are generally candidate-recall / training compilations, not official released exam papers. The reference answers in this app are original study answers and are not official scoring answers.
-
-## Adding more questions
-Add objects to `QUESTIONS` in `data.js` using:
-- `task`: 2 or 3
-- `month`: e.g. `2026-09`
-- `category`: topic
-- `hot`: 1–5
-- `question`: French prompt
-- `cn`: Chinese explanation
-- `template`: Tâche 2 question framework items
-- `answer`: original reusable answer model
-- `source`: source label
+## 题库说明
+题目来自公开可查的 TCF 口语考生回忆/培训整理资料，并非官方公开原卷。网站中的范文为学习用途的原创参考范文，不是官方评分答案。
